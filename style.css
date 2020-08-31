@@ -79,7 +79,6 @@ body {
     float: left;
     z-index: 3;
     box-shadow: 1px 8px 30px 4px black inset;
-
 }
 
 .rightBox {
@@ -213,7 +212,6 @@ body {
     flex-direction: column;
     margin-top: 3.2rem;
     padding-left: 4rem;
-
 }
 
 .mainContactText {
@@ -222,15 +220,25 @@ body {
     width: 20rem;
     padding: 7.5rem 4rem;
     text-align: center;
-
 }
 
 .name {
+    display: block;
     width: 16rem;
     height: 2.5rem;
     border: 3px rgb(48, 48, 48);
     border-style: solid;
     background-color: rgb(185, 185, 185);
+    font-size: 1rem;
+    color: black;
+}
+
+.name:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(73, 73, 73)
 }
 
 .message {
@@ -241,10 +249,15 @@ body {
     border-radius: 2px;
     background-color: rgb(185, 185, 185);
     margin-top: 2rem;
+    color: black;
+}
+
+.message:focus {
+    outline: none;
 }
 
 .submit {
-    display: inline;
+    display: block;
     height: 2rem;
     width: 5.5rem;
     margin-top: 2rem;
@@ -252,6 +265,15 @@ body {
     border: 3px rgb(48, 48, 48);
     border-style: solid;
     border-radius: 2px;
+    color: black;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.finePrint {
+    font-size: .8rem;
 }
 
  .footer {
@@ -291,3 +313,4 @@ body {
 .about:hover {
     text-decoration: underline;
 }
+
