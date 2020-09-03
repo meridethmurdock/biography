@@ -167,3 +167,38 @@ body {
 .about:hover {
     text-decoration: underline;
 }
+
+@media all and (max-width: 1200px) {
+    #name {
+        font-size: 60px;
+    }
+    .leftBox, 
+    .rightBox,
+    .socialsbox,
+    .socialselements,
+    .socialLinks, 
+    .bottomLeftBox, 
+    .bottomRightBox {
+        display: none;
+    }
+    .aboutMe {
+        width: 90%;
+        height: 80%;
+    }
+    .aboutMeText {
+        display: initial;
+        height: 1%
+    }  
+    .profilePic {
+        display: block;
+        margin: 0 auto
+    }
+    .footerRight  {
+        width: 20%;
+    }
+    .footerLeft {
+        width:  50%;
+        font-size: .8rem;
+    }
+    
+} 

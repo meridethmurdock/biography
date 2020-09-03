@@ -32,6 +32,7 @@
     box-shadow: 0px 9px 20px black;
     position: relative;
     z-index: 1;
+    padding: 0;
 }
 
 .navbarLinks:hover {
@@ -312,5 +313,81 @@ body {
 
 .about:hover {
     text-decoration: underline;
+}
+
+
+
+@media all and (max-width: 1375px) {
+    #name {
+        font-size: 60px;
+    }
+    .leftBox, 
+    .rightBox,
+    .socialsbox,
+    .socialselements,
+    .socialLinks, 
+    .bottomLeftBox, 
+    .bottomRightBox {
+      display: none; 
+    }
+    img {
+        transform: scale(0.9);
+        margin: .1rem;
+        padding: .1rem;
+    }
+    .introductionBorder {
+        width: 85%;
+    }
+    .pictureSectionElements {
+        flex-wrap: wrap;
+        height: 67rem;
+        padding: none;
+        margin: none;
+    }
+    .pictureSection  {
+        width: 85%;
+        height: 76rem;
+    }
+    .pictureSection  {
+        width: 85%;
+        height: 76rem;
+    }
+    .upcomingText  {
+        width: 85%;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    .upcomingPicture  {
+        transform: scale(0.8);
+    }
+    .upcomingBox {
+        width: 85%;
+        flex-direction: column-reverse;
+        display: flex;    
+        height: 60%;
+    }
+    .mainContactBox {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+    }   
+    .mainContactText {
+        height: 10%;
+    }
+    .mainContactForm {
+        padding: 2.3rem;
+    }
+
+    .footerRight  {
+        width: 20%;
+    }
+
+    .footerLeft {
+        width:  50%;
+        font-size: .8rem;
+    }
+
+    
 }
 
